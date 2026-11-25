@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Septem Peccata — Tujuh Kartu Pos</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="intro"><div class="moon"></div><canvas id="bats"></canvas><div class="it"><div class="sub">Silvanna’s Exhibition</div><h1>Septem<br class="mb"> Peccata</h1></div><button id="skip">Lewati</button></div>
+<nav id="nav"><a href="#beranda">Beranda</a><a href="#kartu">Kartu Pos</a><a href="#kuis">Kuis Dosa</a><a href="#tentang">Tentang</a></nav>
+
+<section class="pg" id="beranda">
+<div class="hero"><canvas id="embers"></canvas>
+<div class="sub">Silvanna's Exhibition</div>
+<h1>Septem<br>Peccata</h1>
+<div class="orn">✦ ✦ ✦</div>
+<p>Sebab dari dalam, dari hati orang, timbul segala pikiran jahat, percabulan, pencurian, pembunuhan, perzinahan, keserakahan, kejahatan, kelicikan, hawa nafsu, iri hati, hujat, kesombongan, kebebalan. Semua hal-hal jahat ini timbul dari dalam dan menajiskan orang.</p>
+<p>(Markus 7:21-23)</p>
+<a class="btn" href="#kartu">Masuki Pameran</a></div>
+<div class="wrap">
+<h2 class="rv">Apa Itu Tujuh Dosa Besar?</h2>
+<div class="orn rv" style="text-align:center">†</div>
+<p class="lead rv">Tujuh dosa besar (<i>seven deadly sins</i>) adalah daftar sifat dan hasrat manusia dalam tradisi Kristen yang dianggap sebagai akar dari dosa-dosa lain. Dirumuskan oleh biarawan Evagrius dari Pontus pada abad ke-4, lalu disusun menjadi tujuh oleh Paus Gregorius Agung pada abad ke-6. Hingga kini, ia menjadi cermin tentang sisi tergelap yang bersemayam dalam diri kita semua.</p>
+<div class="sins" id="sinlist"></div>
+</div></section>
+
+<section class="pg" id="kartu"><div class="wrap">
+<h2>Tujuh Kartu Pos</h2><div class="orn" style="text-align:center">✦</div>
+<p class="lead">Setiap kartu pos menyimpan satu kisah. Sentuh kartu untuk membaliknya dan membaca cerita pemiliknya.</p>
+<div class="grid" id="cards"></div>
+</div></section>
+
+<section class="pg" id="kuis"><div class="wrap">
+<div class="sclw"><svg viewBox="0 0 200 200" fill="none" stroke-linecap="round" aria-hidden="true">
+<path d="M68 182H132L120 170H80Z" fill="#5c0a12" stroke="#8b0f1a" stroke-width="2"/>
+<path d="M100 40V170" stroke="#f2ece4" stroke-width="4"/>
+<g><animateTransform attributeName="transform" type="rotate" values="-13 100 40;13 100 40;-13 100 40" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="1.6s" repeatCount="indefinite"/>
+<path d="M26 40H174" stroke="#f2ece4" stroke-width="4"/>
+<g><animateTransform attributeName="transform" type="rotate" values="13 28 40;-13 28 40;13 28 40" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="1.6s" repeatCount="indefinite"/>
+<path d="M28 40L10 94M28 40L46 94" stroke="#a89c94" stroke-width="1.5"/><path d="M6 94Q28 122 50 94Z" fill="#8b0f1a66" stroke="#8b0f1a" stroke-width="2.5"/></g>
+<g><animateTransform attributeName="transform" type="rotate" values="13 172 40;-13 172 40;13 172 40" keyTimes="0;.5;1" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1" dur="1.6s" repeatCount="indefinite"/>
+<path d="M172 40L154 94M172 40L190 94" stroke="#a89c94" stroke-width="1.5"/><path d="M150 94Q172 122 194 94Z" fill="#8b0f1a66" stroke="#8b0f1a" stroke-width="2.5"/></g></g>
+<circle cx="100" cy="40" r="6" fill="#8b0f1a" stroke="#f2ece4" stroke-width="2"/></svg></div>
+<h2>Timbang Jiwamu</h2><div class="orn" style="text-align:center">✦</div>
+<p class="lead">Jawablah sesuai dirimu yang sebenarnya, bukan dirimu yang ingin terlihat. 30 pernyataan, skala 1 sampai 5.</p>
+<div class="box" id="quiz"></div>
+</div></section>
+
+<section class="pg" id="tentang"><div class="wrap ab">
+<figure><img id="abimg" alt="Silvanna"><figcaption>SILVANNA</figcaption></figure>
+<div class="ab-t"><div class="sub">Sang Pemilik Pameran</div>
+<h2>Silvanna</h2><div class="nm">Silvania Nielga Tampubolon</div>
+<dl class="facts"><dt>Lahir</dt><dd>Jakarta, 24 Mei 2006</dd><dt>Panggilan</dt><dd>Silvanna</dd><dt>Menempuh</dt><dd>Polimedia Medan</dd><dt>Dunia</dt><dd>Seni &amp; Desain</dd></dl></div>
+<div class="ab-b">
+<h3>Awal Mula</h3>
+<p>Namaku Silvania Nielga Tampubolon, tapi teman-temanku memanggilku Silvanna. Aku lahir di Jakarta pada 24 Mei 2006 dan tumbuh besar di kota yang hampir tidak pernah benar-benar sunyi itu.</p>
+<p>Kalau ada yang bertanya sejak kapan aku jatuh cinta pada desain, jujur saja, aku tidak ingat. Rasanya seperti ia sudah ada sebelum aku bisa mengingat apa pun, seperti bayangan yang selalu berjalan di sampingku.</p>
+<h3>Komputer di Kamarku</h3>
+<p>Saat usiaku empat tahun, Ayah membelikan sebuah komputer dan meletakkannya di kamarku. Bagi anak sekecil itu, layar yang menyala adalah sebuah pintu. Aku duduk di depannya, menggambar apa saja di Paint: rumah, matahari, lingkaran yang tidak pernah benar-benar bulat.</p>
+<p>Lalu ada aplikasi mewarnai yang populer kala itu. Aku suka sekali momen ketika sebuah ruang kosong tiba-tiba terisi warna hanya dengan satu klik. Dari sanalah, tanpa sadar, aku belajar bahwa warna bisa mengubah suasana, bahkan sebelum ada satu kata pun yang terucap.</p>
+<div class="pq">Warna selalu lebih dulu bicara daripada kata-kata.</div>
+<h3>Dunia dari Layar PS2</h3>
+<p>Tak lama kemudian, Ayah juga membelikanku PlayStation 2. Di sana aku bertemu dunia-dunia lain: tokoh dengan gaya yang tak biasa, latar yang membuatku betah berlama-lama memandangnya, dan suasana yang terasa hidup. Aku menjelajahinya sebagai pemain, tetapi juga sebagai anak kecil yang diam-diam mencatat semuanya di kepala.</p>
+<p>Setelah layar dimatikan, dunia itu tidak ikut hilang. Ia pindah ke atas kertas, lewat pensil dan krayon, menjadi inspirasi baru bagi gambar dan warna-warnaku.</p>
+<h3>Dinding yang Penuh Coretan</h3>
+<p>Suatu hari, orang tuaku menemukan dinding kamarku penuh coretan. Itulah pertama kalinya mereka benar-benar menyadari betapa besar kecintaanku pada gambar. Mereka memandanginya sebentar, lalu berkata bahwa gambarku bagus.</p>
+<p>Setelah itu, buku gambar dan buku mewarnai mulai berdatangan. Dinding kamarku berhenti menjadi kanvas, tetapi imajinasiku sudah terlanjur melompat keluar dari sana dan tidak pernah kembali.</p>
+<h3>Panggung Lomba</h3>
+<p>Dari situ, orang tuaku sering mendaftarkanku ke berbagai lomba. Aku masih ingat rasa deg-degan saat duduk di depan kertas kosong, dengan waktu yang terus berjalan dan peserta lain di sekelilingku. Namun begitu warna mulai memenuhi kertas, gugup itu pelan-pelan berubah menjadi tenang.</p>
+<p>Aku pulang dengan banyak kemenangan, rata-rata sebagai juara satu. Yang membuatku paling bahagia bukan hanya pialanya, melainkan perasaan bahwa apa yang kucintai ternyata bisa membuat orang lain berhenti sejenak dan melihat. Rasa itu membuatku semakin bersemangat menjelajahi dunia seni.</p>
+<h3>Persimpangan</h3>
+<p>Lalu tibalah saat aku harus memilih. Aku sebenarnya sudah diterima di SMAN 2 Bekasi jurusan IPA, jalan yang terlihat aman dan banyak dipilih orang. Tetapi di dalam hati, aku tahu ke mana aku ingin melangkah.</p>
+<p>Pada akhirnya aku memilih SMK dan masuk jurusan Multimedia. Aku tidak pernah menyesalinya. Tidak sekali pun. Sebab sejak hari itu, aku berhenti hanya mengikuti jalan yang sudah tersedia dan mulai membuat jalanku sendiri.</p>
+<div class="pq">Aku memilih jalan yang membuat hatiku terasa pulang.</div>
+<h3>Belajar Banyak Hal</h3>
+<p>Di sana aku sadar bahwa desain jauh lebih luas daripada sekadar menggambar dan mewarnai. Ada warna dan cara membacanya, ada tata letak, ada cerita yang bisa disampaikan lewat sebuah gambar. Satu per satu, aku belajar semuanya, dan semakin banyak yang kupelajari, semakin besar rasa ingin tahuku.</p>
+<h3>Menuju Medan</h3>
+<p>Setelah SMK, aku melanjutkan dengan mengikuti UTBK dan memilih Polimedia Medan untuk meneruskan eksplorasi seniku. Medan terasa jauh dari Jakarta, dari rumah, dan dari semua hal yang kukenal. Tetapi justru di kota baru itulah aku belajar banyak hal tentang desain, juga tentang diriku sendiri.</p>
+<p>Aku mengerti sekarang bahwa menggambar hanyalah pintu pertama. Di baliknya ada ruang yang sangat luas, dan aku masih ingin terus menjelajahinya.</p>
+<h3>Hari Ini</h3>
+<p>Perjalananku belum selesai. Cita-citaku masih berjalan, dan aku sangat bahagia dengan jalan yang kupilih.</p>
+<p>Septem Peccata adalah salah satu langkahku di jalan itu: tujuh kartu pos, tujuh kisah, tentang sisi manusia yang sering kali sulit diakui. Terima kasih sudah singgah dan membaca setiap ceritanya.</p>
+<div class="ab-end"><div class="orn">&#10022; &#10022; &#10022;</div><b>Begitulah aku.</b></div>
+</div></div></section>
+<section class="pg" id="cerita"><div class="wrap"><div class="story" id="story"></div></div></section>
+<footer>SEPTEM PECCATA · KATALOG PAMERAN</footer>
+
+<script src="script.js"></script></body></html>
